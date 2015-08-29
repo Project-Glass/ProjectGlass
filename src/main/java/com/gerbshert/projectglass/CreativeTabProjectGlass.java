@@ -11,13 +11,18 @@ import net.minecraft.item.Item;
 public class CreativeTabProjectGlass extends CreativeTabs {
 
     public CreativeTabProjectGlass() {
-
         super(Strings.MOD_ID);
+        setBackgroundImageName("tabProjectGlass.png");
     }
 
     @Override
     public Item getTabIconItem() {
 
         return Items.glass_bottle;
+    }
+
+    @Override
+    public boolean hasSearchBar() {
+        return true;
     }
 }
