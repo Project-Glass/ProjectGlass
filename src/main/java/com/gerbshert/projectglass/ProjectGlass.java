@@ -4,12 +4,14 @@ import com.gerbshert.projectglass.blocks.PGBlocks;
 import com.gerbshert.projectglass.items.PGItems;
 import com.gerbshert.projectglass.lib.Strings;
 import com.gerbshert.projectglass.proxy.CommonProxy;
+import com.gerbshert.projectglass.world.generation.PGOreGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
 /**
@@ -25,12 +27,13 @@ public class ProjectGlass {
     public static ProjectGlass instance;
 
     public static CreativeTabs tabProjectGlass = new CreativeTabProjectGlass();
+    public static PGOreGen pgOreGen = new PGOreGen();
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         PGBlocks.RegisterBlocks();
         PGItems.RegisterItems();
-        //GameRegistry.registerWorldGenerator(PGOreGen, 0);
+        GameRegistry.registerWorldGenerator(pgOreGen, 0);
     }
 
     @Mod.EventHandler

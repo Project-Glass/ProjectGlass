@@ -4,7 +4,18 @@ Crystals:
 	Red: Increases Glasses Red Tint By 10
 	Green: Increases Glasses Green Tint By 10
 	Blue: Increases Glasses Blue Tint By 10
-	Black: Increases Glasses Darkness By 10
-	White: Removes 10 RGBBl Tint/Darkness from Glasses
+	?Black: Increases Glasses Darkness Tini By 10
+	?White: Removes 10 of each R,G,B,& Bl tint from glasses
 Ores:
-	All ores drop 10 crystals
+	All ores drop 3-4 crystals.
+	
+	
+RGB -> HEX
+R1,R2,G1,G2,B1,B2
+
+R / 16 = R1
+R % 16 = R2
+G / 16 = G1
+G % 16 = G2
+B / 16 = B1
+B % 16 = B2
