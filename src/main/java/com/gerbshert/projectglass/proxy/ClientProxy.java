@@ -3,5 +3,5 @@ package com.gerbshert.projectglass.proxy;
 /**
  * Created by Gabriel on 8/28/2015.
  */
-public class ClientProxy extends CommonProxy{
+public class ClientProxy extends CommonProxy {
 }

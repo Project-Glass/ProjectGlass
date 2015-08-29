@@ -1,0 +1,10 @@
+These are just ideas. 
+
+Crystals:
+	Red: Increases Glasses Red Tint By 10
+	Green: Increases Glasses Green Tint By 10
+	Blue: Increases Glasses Blue Tint By 10
+	Black: Increases Glasses Darkness By 10
+	White: Removes 10 RGBBl Tint/Darkness from Glasses
+Ores:
+	All ores drop 10 crystals
