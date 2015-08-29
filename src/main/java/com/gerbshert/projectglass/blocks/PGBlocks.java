@@ -20,9 +20,21 @@ public class PGBlocks {
 
 
     public static void RegisterBlocks() {
+        //Ore
+        oreCrystalBlack = new PGOre("oreCrystalBlack");
+        oreCrystalBlue = new PGOre("oreCrystalBlue");
+        oreCrystalGreen = new PGOre("oreCrystalGreen");
+        oreCrystalRed = new PGOre("oreCrystalRed");
+        oreCrystalWhite = new PGOre("oreCrystalWhite");
     }
 
     public static void RenderBlocks() {
+        //Ore
+        RenderMe(oreCrystalBlack, "oreCrystalBlack");
+        RenderMe(oreCrystalBlue, "oreCrystalBlue");
+        RenderMe(oreCrystalGreen, "oreCrystalGreen");
+        RenderMe(oreCrystalRed, "oreCrystalRed");
+        RenderMe(oreCrystalWhite, "oreCrystalWhite");
 
     }
 
