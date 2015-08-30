@@ -1,1 +1,15 @@
 itemGroup.projectglass=Project Glass
+
+item.projectglass.crystalBlack.name=Black Crystal
+item.projectglass.crystalBlue.name=Blue Crystal
+item.projectglass.crystalGreen.name=Green Crystal
+item.projectglass.crystalRed.name=Red Crystal
+item.projectglass.crystalWhite.name=White Crystal
+item.projectglass.malletPadded.name=Padded Hammer
+item.projectglass.malletTough.name=Tough Hammer
+
+tile.projectglass_oreCrystalBlack.name=Black Crystal
+tile.projectglass_oreCrystalBlue.name=Blue Crystal
+tile.projectglass_oreCrystalGreen.name=Green Crystal
+tile.projectglass_oreCrystalRed.name=Red Crystal
+tile.projectglass_oreCrystalWhite.name=White Crystal
