@@ -7,13 +7,14 @@ import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
- * Created by Gabriel on 8/29/2015.
+ * @author GerbShert
  */
 public class PGOre extends Block {
     public PGOre(String name) {
         super(Material.ground);
         setCreativeTab(ProjectGlass.tabProjectGlass);
-        setUnlocalizedName(Strings.MOD_ID + "_" + name);
-        GameRegistry.registerBlock(this, name);
+        setUnlocalizedName(name);
+
+        PGBlocks.blocks.add(this);
     }
 }

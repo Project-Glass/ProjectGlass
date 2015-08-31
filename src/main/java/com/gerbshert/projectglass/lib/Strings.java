@@ -1,7 +1,7 @@
 package com.gerbshert.projectglass.lib;
 
 /**
- * Created by Gabriel on 8/28/2015.
+ * @author GerbShert
  */
 public class Strings {
 

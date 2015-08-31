@@ -6,12 +6,13 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
- * Created by Gabriel on 8/29/2015.
+ * @author GerbShert
  */
 public class PGBaseItem extends Item {
     public PGBaseItem(String name) {
         setCreativeTab(ProjectGlass.tabProjectGlass);
-        setUnlocalizedName(Strings.MOD_ID + "." + name);
-        GameRegistry.registerItem(this, name);
+        setUnlocalizedName(name);
+
+        PGItems.items.add(this);
     }
 }

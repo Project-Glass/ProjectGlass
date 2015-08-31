@@ -7,12 +7,13 @@ import net.minecraft.util.EnumChatFormatting;
 import java.util.List;
 
 /**
- * Created by Gabriel on 8/30/2015.
+ * @author GerbShert
  */
-public class MalletTough extends PGBaseItem{
-    public MalletTough(String name){
+public class MalletTough extends PGBaseItem {
+    public MalletTough(String name) {
         super(name);
     }
+
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List tooltip, boolean advanced) {
         tooltip.add(EnumChatFormatting.DARK_GRAY + "Lot#:354");

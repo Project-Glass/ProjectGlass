@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 import java.util.Random;
 
 /**
- * Created by Gabriel on 8/29/2015.
+ * @author GerbShert
  */
 public class PGOreGen implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {

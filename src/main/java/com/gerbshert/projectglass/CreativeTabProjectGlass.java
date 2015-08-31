@@ -6,7 +6,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 /**
- * Created by Gabriel on 8/28/2015.
+ * @author GerbShert
  */
 public class CreativeTabProjectGlass extends CreativeTabs {
 
