@@ -13,8 +13,7 @@ public class PGOre extends Block {
     public PGOre(String name) {
         super(Material.ground);
         setCreativeTab(ProjectGlass.tabProjectGlass);
-        setUnlocalizedName(name);
-
-        PGBlocks.blocks.add(this);
+        setUnlocalizedName(Strings.MOD_ID + "_" + name);
+        GameRegistry.registerBlock(this, name);
     }
 }

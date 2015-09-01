@@ -11,8 +11,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class PGBaseItem extends Item {
     public PGBaseItem(String name) {
         setCreativeTab(ProjectGlass.tabProjectGlass);
-        setUnlocalizedName(name);
-
-        PGItems.items.add(this);
+        setUnlocalizedName(Strings.MOD_ID + "." + name);
+        GameRegistry.registerItem(this, name);
     }
 }

@@ -15,9 +15,6 @@ import java.util.List;
  * @author GerbShert
  */
 public class PGItems {
-
-    public static List<Item> items = new ArrayList<Item>();
-
     //Glow Crystals
     public static Item crystalBlack;
     public static Item crystalBlue;
@@ -40,16 +37,22 @@ public class PGItems {
         malletPadded = new PGBaseItem("malletPadded");
         malletTough = new MalletTough("malletTough");
 
-        for (Item item : items) {
-            GameRegistry.registerItem(item, item.getUnlocalizedName());
-        }
     }
 
     public static void renderItems() {
-        for (Item item : items) {
-            RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-            renderItem.getItemModelMesher().register(item, 0, new ModelResourceLocation(Strings.MOD_ID + ":" + item.getUnlocalizedName() + (Config.useAlternateTextures ? "" : "_alt"), "inventory"));
-        }
+        //Glow Crystals
+        RenderMe(crystalBlack, "crystalBlack");
+        RenderMe(crystalBlue, "crystalBlue");
+        RenderMe(crystalGreen, "crystalGreen");
+        RenderMe(crystalRed, "crystalRed");
+        RenderMe(crystalWhite, "crystalWhite");
+        //Mallets
+        RenderMe(malletPadded, "malletPadded");
+        RenderMe(malletTough, "malletTough");
     }
 
+    public static void RenderMe(Item myItem, String myName) {
+        RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+        renderItem.getItemModelMesher().register(myItem, 0, new ModelResourceLocation(Strings.MOD_ID + ":" + myName, "inventory"));
+    }
 }

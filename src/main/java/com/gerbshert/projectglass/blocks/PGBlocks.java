@@ -16,9 +16,6 @@ import java.util.List;
  * @author GerbShert
  */
 public class PGBlocks {
-
-    public static List<Block> blocks = new ArrayList<Block>();
-
     //Ore
     public static Block oreCrystalBlack;
     public static Block oreCrystalBlue;
@@ -34,17 +31,20 @@ public class PGBlocks {
         oreCrystalGreen = new PGOre("oreCrystalGreen");
         oreCrystalRed = new PGOre("oreCrystalRed");
         oreCrystalWhite = new PGOre("oreCrystalWhite");
-
-        for (Block block : blocks) {
-            GameRegistry.registerBlock(block, block.getUnlocalizedName());
-        }
     }
 
     public static void renderBlocks() {
-        for (Block block : blocks) {
-            RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-            renderItem.getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Strings.MOD_ID + ":" + block.getUnlocalizedName() + (Config.useAlternateTextures ? "" : "_alt"), "inventory"));
-        }
+        //Ore
+        RenderMe(oreCrystalBlack, "oreCrystalBlack");
+        RenderMe(oreCrystalBlue, "oreCrystalBlue");
+        RenderMe(oreCrystalGreen, "oreCrystalGreen");
+        RenderMe(oreCrystalRed, "oreCrystalRed");
+        RenderMe(oreCrystalWhite, "oreCrystalWhite");
+
     }
 
+    public static void RenderMe(Block myBlock, String myName) {
+        RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+        renderItem.getItemModelMesher().register(Item.getItemFromBlock(myBlock), 0, new ModelResourceLocation(Strings.MOD_ID + ":" + myName, "inventory"));
+    }
 }
