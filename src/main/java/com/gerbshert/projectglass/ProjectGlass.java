@@ -5,6 +5,7 @@ import com.gerbshert.projectglass.items.PGItems;
 import com.gerbshert.projectglass.lib.Strings;
 import com.gerbshert.projectglass.misc.Config;
 import com.gerbshert.projectglass.proxy.CommonProxy;
+import com.gerbshert.projectglass.util.PGUtilities;
 import com.gerbshert.projectglass.world.generation.PGOreGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Configuration;
@@ -40,6 +41,8 @@ public class ProjectGlass {
         PGBlocks.registerBlocks();
         PGItems.registerItems();
         GameRegistry.registerWorldGenerator(pgOreGen, 0);
+        //System.out.println("Colour Test:" + PGUtilities.rgb2Decimal(255,255,255));
+        //Should print "16777215"(White) to the console.
     }
 
     @Mod.EventHandler
